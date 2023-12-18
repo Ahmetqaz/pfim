@@ -321,3 +321,36 @@
     }
   }
 }
+
+@mixin components-1160 {
+  .main {
+    padding-top: 100px;
+  }
+}
+@mixin components-1025 {
+  .main {
+    padding-top: 85px;
+  }
+}
+@mixin components-860 {
+  .main {
+    padding-top: 75px;
+  }
+  .button {
+    &--text {
+      font-size: 26px;
+    }
+  }
+}
+@mixin components-660 {
+  .main {
+    padding-top: 71px;
+  }
+}
+@mixin components-580 {
+  .button {
+    &--text {
+      font-size: 22px;
+    }
+  }
+}

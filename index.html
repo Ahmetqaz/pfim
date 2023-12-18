@@ -17,10 +17,10 @@
     <header class="header" id="header">
       <div class="autoContainer">
         <div class="header__inner">
-          <div class="logo">
+          <a href="#" class="logo">
             <img src="./images/logo.svg" alt="logo">
-          </div>
-          <nav class="nav">
+          </a>
+          <nav class="nav" id="menu">
             <div class="nav__inner">
               <div class="nav__group">
                 <a href="#" class="nav__link active">
@@ -41,7 +41,9 @@
               </div>
             </div>
           </nav>
-          <button class="burger" id="menuBtn"></button>
+          <button class="burger" id="menuBtn">
+            <span></span>
+          </button>
         </div>
       </div>
     </header>
@@ -88,10 +90,7 @@
       <div class="autoContainer">
         <div class="info__inner">
           <h3 class="text--underline">
-            <strong>Performance.</strong>
-            <br>
-            Effectiveness.
-            <br>
+            <strong>Performance. </strong>Effectiveness.
             <strong>
               Excellence.
             </strong>
@@ -305,7 +304,7 @@
     <!-- #feeatures end -->
     <!-- #benefits start -->
     <section class="benefits">
-      <div class="autoContainer">
+      <div class="autoContainer autoContainer--fullWidth">
         <div class="benefits__inner">
           <div class="benefits__image">
             <img src="./images/beenefits.png" alt="image">

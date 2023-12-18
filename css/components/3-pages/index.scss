@@ -69,6 +69,9 @@
     flex: 1;
     letter-spacing: -0.42px;
   }
+  h3 {
+    max-width: 6em;
+  }
 }
 .about {
   background: $blue-3;
@@ -84,6 +87,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 1;
     img {
       width: 100%;
       height: 100%;
@@ -97,6 +102,8 @@
     flex-direction: column;
     gap: 32px;
     padding: 58px 0 75px;
+    position: relative;
+    z-index: 1;
   }
   &__box {
     p {
@@ -129,6 +136,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    gap: 20px;
   }
   &__box {
     display: flex;
@@ -189,12 +197,17 @@
       width: 55px;
       height: 80px;
     }
+    p {
+      position: relative;
+      z-index: 1;
+    }
   }
   &__text {
     display: flex;
     flex-direction: column;
     font-size: 25px;
     min-height: 148px;
+    gap: 2px;
   }
   .bg {
     height: calc(100% - 195px);
@@ -206,10 +219,10 @@
   position: relative;
   padding: 60px 0 70px;
   &__content {
-    width: 45%;
+    width: 44%;
   }
   &__image {
-    width: 45%;
+    width: 47.5%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -238,11 +251,10 @@
     }
     &-button {
       font-size: 40px;
-      padding: unset;
-      gap: 10px;
       letter-spacing: -0.8px;
       margin-bottom: 72px;
       transition: 0.3s ease;
+      font-family: $font-primary;
       &.active {
         margin: 0;
       }
@@ -250,7 +262,7 @@
   }
   &__box {
     position: absolute;
-    left: 50%;
+    left: 53%;
     bottom: 80px;
     transform: translateX(-50%);
     .shape {
@@ -262,4 +274,292 @@
   }
 }
 
-
+@mixin index-1280 {
+  .features {
+    &__row {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    &__item {
+      width: calc(33.3% - 20px);
+    }
+    &__text {
+      min-height: 85px;
+    }
+    &__box {
+      &-title {
+        font-size: 90px;
+      }
+    }
+  }
+  .benefits {
+    &__box {
+      bottom: 60px;
+    }
+    &__tab {
+      &-button {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+@mixin index-1160 {
+  .hero {
+    height: calc(100vh - 100px);
+    height: calc(100dvh - 100px);
+  }
+  .features {
+    &__row {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    &__item {
+      width: calc(33.3% - 14px);
+    }
+    &__text {
+      min-height: 85px;
+      font-size: 23px;
+    }
+    &__box {
+      &-title {
+        font-size: 80px;
+      }
+    }
+  }
+  .benefits {
+    padding: 50px 0 60px;
+    &__box {
+      bottom: 40px;
+      .button {
+        font-size: 30px;
+      }
+    }
+    &__tab {
+      &-button {
+        margin-bottom: 40px;
+        font-size: 35px;
+      }
+    }
+  }
+}
+@mixin index-1025 {
+  .hero {
+    height: calc(100vh - 85px);
+    height: calc(100dvh - 85px);
+  }
+  .about {
+    &__inner {
+      gap: 30px;
+    }
+    &__image {
+      width: calc(43% - 15px);
+    }
+    &__content {
+      width: calc(58% - 15px);
+      gap: 25px;
+    }
+  }
+  .features {
+    &__item {
+      padding: 38px 16px 30px;
+    }
+    &__box {
+      &-title {
+        font-size: 70px;
+      }
+    }
+  }
+  .benefits {
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    &__box {
+      position: relative;
+      transform: unset;
+      left: unset;
+      bottom: unset;
+      margin: 0 auto;
+    }
+    &__image {
+      position: unset;
+      width: 100%;
+      max-width: 700px;
+      max-height: 700px;
+      margin: 0 auto;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    &__content {
+      width: 100%;
+    }
+    &__tab {
+      &-button {
+        margin-bottom: 60px;
+        font-size: 35px;
+      }
+    }
+  }
+}
+@mixin index-940 {
+  .about {
+    padding: 40px 0;
+    &__inner {
+      gap: 30px;
+      flex-direction: column;
+    }
+    &__image {
+      width: 100%;
+      max-width: 600px;
+      max-height: 600px;
+      margin: 0 auto;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    &__content {
+      width: 100%;
+      max-width: unset;
+      padding: 0;
+      gap: 30px;
+    }
+    .shape {
+      right: 0;
+      bottom: unset;
+      top: 0;
+    }
+  }
+  .features {
+    &__row {
+      gap: 30px;
+    }
+    &__item {
+      width: calc(50% - 15px);
+      padding: 38px 24px 30px;
+      .shape {
+        bottom: -30px;
+        left: unset;
+        right: 0;
+      }
+    }
+    &__text {
+      min-height: unset;
+    }
+    &__box {
+      &-title {
+        font-size: 60px;
+      }
+    }
+  }
+}
+@mixin index-860 {
+  .hero {
+    height: calc(100vh - 75px);
+    height: calc(100dvh - 75px);
+  }
+  .info {
+    padding: 40px 0 45px;
+    &__inner {
+      gap: 40px;
+    }
+  }
+  .features {
+    &__row {
+      gap: 20px;
+    }
+    &__item {
+      width: calc(50% - 10px);
+      padding: 30px 18px 30px;
+    }
+    &__box {
+      &-title {
+        font-size: 50px;
+      }
+    }
+  }
+  .benefits {
+    &__box {
+      .button {
+        font-size: 28px;
+      }
+    }
+    &__tab {
+      &-button {
+        margin-bottom: 60px;
+        font-size: 30px;
+      }
+    }
+  }
+}
+@mixin index-660 {
+  .hero {
+    height: calc(100vh - 70px);
+    height: calc(100dvh - 70px);
+    &__group {
+      padding-left: 30px;
+    }
+  }
+  .about {
+    &__content {
+      gap: 20px;
+    }
+  }
+  .benefits {
+    padding: 40px 0;
+    &__box {
+      .button {
+        font-size: 24px;
+      }
+    }
+    &__image {
+      border-radius: 10px;
+    }
+    &__tab {
+      &-button {
+        margin-bottom: 40px;
+        font-size: 26px;
+      }
+    }
+  }
+}
+@mixin index-580 {
+  .info {
+    padding: 40px 0 45px;
+    &__inner {
+      gap: 30px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    h3 {
+      max-width: 12em;
+    }
+  }
+  .features {
+    &__row {
+      gap: 20px;
+    }
+    &__item {
+      width: 100%;
+      padding: 30px 18px 30px;
+      gap: 16px;
+      .shape {
+        display: none;
+      }
+    }
+    &__header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+    }
+    .bg {
+      height: calc(100% - 242px);
+    }
+  }
+  .benefits {
+    &__tab {
+      &-button {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
