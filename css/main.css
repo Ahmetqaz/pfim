@@ -1001,6 +1001,15 @@ svg {
   font-weight: 700;
   color: #fff;
 }
+.hero .button--text {
+  padding: 0;
+  width: unset;
+  font-weight: 700;
+  color: #fff;
+  font-size: 35px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
 .hero p {
   color: #fff;
 }
@@ -1426,6 +1435,9 @@ svg {
     height: calc(100vh - 85px);
     height: calc(100dvh - 85px);
   }
+  .hero .button--text {
+    font-size: 32px;
+  }
   .about__inner {
     gap: 30px;
   }
@@ -1669,6 +1681,9 @@ svg {
     height: calc(100vh - 75px);
     height: calc(100dvh - 75px);
   }
+  .hero .button--text {
+    font-size: 30px;
+  }
   .info {
     padding: 40px 0 45px;
   }
@@ -1736,6 +1751,13 @@ svg {
   }
   .hero__group {
     padding-left: 30px;
+  }
+  .hero .button--text {
+    font-size: 26px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-top: 1em;
+    padding-right: 0.3em;
   }
   .about__content {
     gap: 20px;

@@ -61,6 +61,14 @@
     font-weight: 700;
     color: $white;
   }
+  .button--text {
+    padding: 0;
+    width: unset;
+    font-weight: 700;
+    color: $white;
+    font-size: 35px;
+    align-self: flex-start;
+  }
   p {
     color: $white;
   }
@@ -380,6 +388,10 @@
   .hero {
     height: calc(100vh - 85px);
     height: calc(100dvh - 85px);
+
+    .button--text {
+      font-size: 32px;
+    }
   }
   .about {
     &__inner {
@@ -491,6 +503,10 @@
   .hero {
     height: calc(100vh - 75px);
     height: calc(100dvh - 75px);
+
+    .button--text {
+      font-size: 30px;
+    }
   }
   .info {
     padding: 40px 0 45px;
@@ -533,6 +549,12 @@
     height: calc(100dvh - 70px);
     &__group {
       padding-left: 30px;
+    }
+    .button--text {
+      font-size: 26px;
+      align-self: flex-end;
+      margin-top: 1em;
+      padding-right: 0.3em;
     }
   }
   .about {
