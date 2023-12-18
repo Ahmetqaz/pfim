@@ -58,13 +58,6 @@ if (header)
 //   changeLinkState();
 // };
 
-///
-///
-///
-///WOW JS
-// new WOW().init({
-//   boxClass: "wow",
-// });
 const tabBtn = document.querySelectorAll(".tabBtn");
 const tabEvent = document.querySelectorAll(".tabEvent");
 tabBtn.forEach((e) => {
@@ -95,79 +88,4 @@ function onTabClick(tabBtns, tabItems, item) {
     }
   });
 }
-
-// video ----------------
-// const video = document.querySelector("#video");
-// if (video) {
-//   const videoButton = document.getElementById("videoButton");
-//   const videoBg = document.getElementById("videoBg");
-//   const videoBody = document.querySelector(".video__content");
-//   let videoCondition = false;
-
-//   const playVideo = () => {
-//     video.play();
-//     video.setAttribute("controls", "");
-//     videoBg.classList.add("active");
-//     videoButton.classList.add("_stop");
-//     video.addEventListener("mouseover", function () {
-//       videoButton.classList.remove("_hide");
-//     });
-//     video.addEventListener("mouseout", function (e) {
-//       videoButton.classList.add("_hide");
-//     });
-//     videoButton.addEventListener("mouseover", function () {
-//       videoButton.classList.remove("_hide");
-//     });
-//   };
-
-//   const pauseVideo = () => {
-//     video.pause();
-//     videoButton.classList.remove("_stop");
-//     videoButton.classList.remove("_hide");
-//     videoBg.classList.remove("active");
-//     video.addEventListener("mouseout", function (e) {
-//       videoButton.classList.remove("_hide");
-//     });
-//   };
-
-//   const videoControl = () => {
-//     videoButton.onclick = () => {
-//       if (videoCondition) {
-//         playVideo();
-//       } else {
-//         pauseVideo();
-//       }
-//     };
-//     video.addEventListener("ended", function () {
-//       pauseVideo();
-//       videoCondition = !videoCondition;
-//     });
-//   };
-
-//   const videoTouch = () => {
-//     videoControl();
-//     videoBody.addEventListener("click", () => {
-//       videoCondition = !videoCondition;
-//       if (videoCondition) {
-//         playVideo();
-//       } else {
-//         pauseVideo();
-//       }
-//     });
-//   };
-//   videoTouch();
-// }
-// video ----------------
-
-// const copyButton = document.getElementById("copyButton");
-// if (copyButton) {
-//   const tooltipText = document.getElementById("tooltipText");
-//   copyButton.onclick = () => {
-//     var copyText = document.getElementById("copyTextarea");
-//     copyText.select();
-//     copyText.setSelectionRange(0, 99999);
-//     navigator.clipboard.writeText(copyText.value);
-//     tooltipText.innerHTML = "Copied";
-//   };
-// }
 
