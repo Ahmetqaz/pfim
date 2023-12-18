@@ -1095,7 +1095,7 @@ svg {
 }
 
 .features {
-  padding: 25px 0;
+  padding: 25px 0 75px;
   position: relative;
 }
 .features__inner {
@@ -1254,6 +1254,12 @@ svg {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   font-family: "HelveticaNowDisplay", sans-serif;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+}
+.benefits__tab-button:hover {
+  opacity: 0.7;
 }
 .benefits__tab-button.active {
   margin: 0;
@@ -1400,6 +1406,9 @@ svg {
   .about__content {
     width: calc(58% - 15px);
     gap: 25px;
+  }
+  .features {
+    padding: 25px 0 65px;
   }
   .features__item {
     padding: 38px 16px 30px;
@@ -1637,6 +1646,9 @@ svg {
   .info__inner {
     gap: 40px;
   }
+  .features {
+    padding: 25px 0 55px;
+  }
   .features__row {
     gap: 20px;
   }
@@ -1747,6 +1759,9 @@ svg {
   }
   .info h3 {
     max-width: 12em;
+  }
+  .features {
+    padding: 25px 0 45px;
   }
   .features__row {
     gap: 20px;

@@ -125,7 +125,7 @@
   }
 }
 .features {
-  padding: 25px 0;
+  padding: 25px 0 75px;
   position: relative;
   &__inner {
     display: flex;
@@ -255,6 +255,10 @@
       margin-bottom: 72px;
       transition: 0.3s ease;
       font-family: $font-primary;
+      @include transition;
+      &:hover {
+        opacity: 0.7;
+      }
       &.active {
         margin: 0;
       }
@@ -360,6 +364,7 @@
     }
   }
   .features {
+    padding: 25px 0 65px;
     &__item {
       padding: 38px 16px 30px;
     }
@@ -464,6 +469,7 @@
     }
   }
   .features {
+    padding: 25px 0 55px;
     &__row {
       gap: 20px;
     }
@@ -535,6 +541,7 @@
     }
   }
   .features {
+    padding: 25px 0 45px;
     &__row {
       gap: 20px;
     }
