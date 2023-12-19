@@ -279,7 +279,7 @@
       opacity: 0;
       max-height: 0;
       pointer-events: none;
-      transition: opacity 0.2s linear, max-height 0.3s linear;
+      transition: all .3s linear , opacity .1s linear , padding .2s linear;
       &.active {
         max-height: unset;
         pointer-events: all;
