@@ -278,15 +278,15 @@
     &-content {
       opacity: 0;
       max-height: 0;
-      transition: 0.3s ease;
       pointer-events: none;
+      transition: opacity 0.2s linear, max-height 0.3s linear;
       &.active {
-        opacity: 1;
         max-height: unset;
         pointer-events: all;
+        opacity: 1;
         padding: 26px 0 34px;
         &._space {
-          padding-bottom: 140px;
+          padding-bottom: 160px;
         }
       }
     }
@@ -294,9 +294,8 @@
       font-size: 40px;
       letter-spacing: -0.8px;
       margin-bottom: 72px;
-      transition: 0.3s ease;
+      transition: 0.2s linear;
       font-family: $font-primary;
-      @include transition;
       &:hover {
         opacity: 0.7;
       }
@@ -384,6 +383,13 @@
         margin-bottom: 40px;
         font-size: 35px;
       }
+      &-content {
+        &.active {
+          &._space {
+            padding-bottom: 140px;
+          }
+        }
+      }
     }
   }
 }
@@ -448,6 +454,19 @@
       &-button {
         margin-bottom: 60px;
         font-size: 35px;
+        width: 100%;
+        text-align: left;
+      }
+      &-content {
+        &.active {
+          opacity: 1;
+          max-height: unset;
+          pointer-events: all;
+          padding: 26px 0 34px;
+          &._space {
+            padding: 26px 0 34px;
+          }
+        }
       }
     }
   }

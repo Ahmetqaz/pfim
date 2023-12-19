@@ -5,6 +5,13 @@
   min-height: 100%;
   padding-top: 119px;
 }
+.anchor {
+  position: relative;
+  top: -74px;
+  &--lg {
+    top: -119px;
+  }
+}
 .autoContainer {
   max-width: 1270px;
   margin: 0 auto;
@@ -326,15 +333,30 @@
   .main {
     padding-top: 100px;
   }
+  .anchor {
+    &--lg {
+      top: -100px;
+    }
+  }
 }
 @mixin components-1025 {
   .main {
     padding-top: 85px;
   }
+  .anchor {
+    &--lg {
+      top: -85px;
+    }
+  }
 }
 @mixin components-860 {
   .main {
     padding-top: 75px;
+  }
+  .anchor {
+    &--lg {
+      top: -75px;
+    }
   }
   .button {
     &--text {
@@ -345,6 +367,12 @@
 @mixin components-660 {
   .main {
     padding-top: 71px;
+  }
+  .anchor {
+    top: -71px;
+    &--lg {
+      top: -71px;
+    }
   }
 }
 @mixin components-580 {

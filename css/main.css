@@ -326,6 +326,14 @@ svg {
   padding-top: 119px;
 }
 
+.anchor {
+  position: relative;
+  top: -74px;
+}
+.anchor--lg {
+  top: -119px;
+}
+
 .autoContainer {
   max-width: 1270px;
   margin: 0 auto;
@@ -1275,29 +1283,26 @@ svg {
 .client__tab-content {
   opacity: 0;
   max-height: 0;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
   pointer-events: none;
+  -webkit-transition: opacity 0.2s linear, max-height 0.3s linear;
+  transition: opacity 0.2s linear, max-height 0.3s linear;
 }
 .client__tab-content.active {
-  opacity: 1;
   max-height: unset;
   pointer-events: all;
+  opacity: 1;
   padding: 26px 0 34px;
 }
 .client__tab-content.active._space {
-  padding-bottom: 140px;
+  padding-bottom: 160px;
 }
 .client__tab-button {
   font-size: 40px;
   letter-spacing: -0.8px;
   margin-bottom: 72px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
   font-family: "HelveticaNowDisplay", sans-serif;
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
-  -moz-transition: all 0.2s ease-in-out 0s;
 }
 .client__tab-button:hover {
   opacity: 0.7;
@@ -1351,6 +1356,9 @@ svg {
   .main {
     padding-top: 100px;
   }
+  .anchor--lg {
+    top: -100px;
+  }
   .header {
     padding: 30px 0;
   }
@@ -1388,6 +1396,9 @@ svg {
   .client__tab-button {
     margin-bottom: 40px;
     font-size: 35px;
+  }
+  .client__tab-content.active._space {
+    padding-bottom: 140px;
   }
 }
 @media (max-width: 1025px) {
@@ -1427,6 +1438,9 @@ svg {
   }
   .main {
     padding-top: 85px;
+  }
+  .anchor--lg {
+    top: -85px;
   }
   .header {
     padding: 25px 0;
@@ -1493,6 +1507,17 @@ svg {
   .client__tab-button {
     margin-bottom: 60px;
     font-size: 35px;
+    width: 100%;
+    text-align: left;
+  }
+  .client__tab-content.active {
+    opacity: 1;
+    max-height: unset;
+    pointer-events: all;
+    padding: 26px 0 34px;
+  }
+  .client__tab-content.active._space {
+    padding: 26px 0 34px;
   }
 }
 @media (max-width: 940px) {
@@ -1562,6 +1587,9 @@ svg {
   }
   .main {
     padding-top: 75px;
+  }
+  .anchor--lg {
+    top: -75px;
   }
   .button--text {
     font-size: 26px;
@@ -1741,6 +1769,12 @@ svg {
   }
   .main {
     padding-top: 71px;
+  }
+  .anchor {
+    top: -71px;
+  }
+  .anchor--lg {
+    top: -71px;
   }
   .header.sticky .logo {
     font-size: 14px;
