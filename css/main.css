@@ -1247,7 +1247,7 @@ svg {
   pointer-events: all;
   padding: 26px 0 34px;
 }
-.client__tab-content.active:last-child {
+.client__tab-content.active._space {
   padding-bottom: 140px;
 }
 .client__tab-button {
