@@ -73,7 +73,7 @@
     max-width: 6em;
   }
 }
-.about {
+.platform {
   background: $blue-3;
   &__inner {
     display: flex;
@@ -124,7 +124,7 @@
     bottom: 0;
   }
 }
-.features {
+.offering {
   padding: 25px 0 75px;
   position: relative;
   &__inner {
@@ -215,7 +215,7 @@
     bottom: 0;
   }
 }
-.benefits {
+.client {
   position: relative;
   padding: 60px 0 70px;
   &__content {
@@ -247,6 +247,9 @@
         max-height: unset;
         pointer-events: all;
         padding: 26px 0 34px;
+        &:last-child {
+          padding-bottom: 140px;
+        }
       }
     }
     &-button {
@@ -279,7 +282,7 @@
 }
 
 @mixin index-1280 {
-  .features {
+  .offering {
     &__row {
       flex-wrap: wrap;
       gap: 30px;
@@ -296,7 +299,7 @@
       }
     }
   }
-  .benefits {
+  .client {
     &__box {
       bottom: 60px;
     }
@@ -312,7 +315,7 @@
     height: calc(100vh - 100px);
     height: calc(100dvh - 100px);
   }
-  .features {
+  .offering {
     &__row {
       flex-wrap: wrap;
       gap: 20px;
@@ -330,7 +333,7 @@
       }
     }
   }
-  .benefits {
+  .client {
     padding: 50px 0 60px;
     &__box {
       bottom: 40px;
@@ -351,7 +354,7 @@
     height: calc(100vh - 85px);
     height: calc(100dvh - 85px);
   }
-  .about {
+  .platform {
     &__inner {
       gap: 30px;
     }
@@ -363,7 +366,7 @@
       gap: 25px;
     }
   }
-  .features {
+  .offering {
     padding: 25px 0 65px;
     &__item {
       padding: 38px 16px 30px;
@@ -374,7 +377,7 @@
       }
     }
   }
-  .benefits {
+  .client {
     &__inner {
       display: flex;
       flex-direction: column;
@@ -408,7 +411,7 @@
   }
 }
 @mixin index-940 {
-  .about {
+  .platform {
     padding: 40px 0;
     &__inner {
       gap: 30px;
@@ -434,7 +437,7 @@
       top: 0;
     }
   }
-  .features {
+  .offering {
     &__row {
       gap: 30px;
     }
@@ -468,7 +471,7 @@
       gap: 40px;
     }
   }
-  .features {
+  .offering {
     padding: 25px 0 55px;
     &__row {
       gap: 20px;
@@ -483,7 +486,7 @@
       }
     }
   }
-  .benefits {
+  .client {
     &__box {
       .button {
         font-size: 28px;
@@ -505,12 +508,12 @@
       padding-left: 30px;
     }
   }
-  .about {
+  .platform {
     &__content {
       gap: 20px;
     }
   }
-  .benefits {
+  .client {
     padding: 40px 0;
     &__box {
       .button {
@@ -540,7 +543,7 @@
       max-width: 12em;
     }
   }
-  .features {
+  .offering {
     padding: 25px 0 45px;
     &__row {
       gap: 20px;
@@ -562,7 +565,7 @@
       height: calc(100% - 242px);
     }
   }
-  .benefits {
+  .client {
     &__tab {
       &-button {
         margin-bottom: 30px;
